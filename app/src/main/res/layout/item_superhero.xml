@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/ivSuperHero"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:background="#04F1E6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSuperHeroName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#F60657"
+        app:layout_constraintStart_toEndOf="@+id/ivSuperHero"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Kotlin" />
+
+<!--    tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="68dp"-->
+
+    <TextView
+        android:id="@+id/tvRealName"
+        app:layout_constraintStart_toEndOf="@+id/ivSuperHero"
+        app:layout_constraintTop_toBottomOf="@+id/tvSuperHeroName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Julissa JOSEPH"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#F14A08"
+        app:layout_constraintEnd_toEndOf="parent"/>
+<!--    tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="27dp"-->
+
+    <TextView
+        android:id="@+id/tvPublisher"
+        app:layout_constraintStart_toEndOf="@+id/ivSuperHero"
+        app:layout_constraintTop_toBottomOf="@+id/tvRealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        tools:text="Edna JOSEPH"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<!--    tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="0dp" -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
